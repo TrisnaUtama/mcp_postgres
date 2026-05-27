@@ -1,20 +1,33 @@
 {
 	"name": "rnd_mcp_postgres",
 	"scripts": {
-		"dev": "bun run --hot src/index.ts",
+		"dev": "bun --watch src/index.ts",
 		"lint:format": "bunx --bun @biomejs/biome format --write",
 		"lint:fix": "bunx --bun @biomejs/biome check --write",
 		"lint:check": "bunx --bun @biomejs/biome check",
-		"prepare": "husky"
+		"prepare": "husky",
+		"db:generate": "drizzle-kit generate --config=./drizzle/drizzle.config.ts",
+		"db:migrate": "drizzle-kit migrate --config=./drizzle/drizzle.config.ts",
+		"db:push": "drizzle-kit push --config=./drizzle/drizzle.config.ts",
+		"db:studio": "drizzle-kit studio --config=./drizzle/drizzle.config.ts",
+		"db:introspect": "drizzle-kit introspect --config=./drizzle/drizzle.config.ts"
 	},
 	"dependencies": {
 		"@scalar/hono-api-reference": "^0.10.19",
+		"dotenv": "^17.4.2",
+		"drizzle-orm": "^0.45.2",
 		"hono": "^4.12.23",
+		"pg": "^8.21.0",
+		"winston": "^3.19.0",
 		"zod": "^4.4.3"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.4.15",
 		"@types/bun": "latest",
-		"husky": "^9.1.7"
+		"@types/node": "^25.9.1",
+		"@types/pg": "^8.20.0",
+		"drizzle-kit": "^0.31.10",
+		"husky": "^9.1.7",
+		"tsx": "^4.22.3"
 	}
 }
