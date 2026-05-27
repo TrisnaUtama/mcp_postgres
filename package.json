@@ -1,0 +1,20 @@
+{
+	"name": "rnd_mcp_postgres",
+	"scripts": {
+		"dev": "bun run --hot src/index.ts",
+		"lint:format": "bunx --bun @biomejs/biome format --write",
+		"lint:fix": "bunx --bun @biomejs/biome check --write",
+		"lint:check": "bunx --bun @biomejs/biome check",
+		"prepare": "husky"
+	},
+	"dependencies": {
+		"@scalar/hono-api-reference": "^0.10.19",
+		"hono": "^4.12.23",
+		"zod": "^4.4.3"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.4.15",
+		"@types/bun": "latest",
+		"husky": "^9.1.7"
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"jsx": "react-jsx",
+		"jsxImportSource": "hono/jsx",
+		"baseUrl": "./src",
+		"paths": {
+			"@app": ["index"],
+			"@controllers/*": ["controllers/*"],
+			"@repositories/*": ["repositories/*"],
+			"@services/*": ["services/*"],
+			"@schemas/*": ["schemas/*"],
+			"@core/*": ["core/*"],
+			"@db/*": ["db/*"]
+		}
+	}
+}

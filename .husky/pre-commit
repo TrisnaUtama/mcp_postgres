@@ -1,0 +1,3 @@
+bun lint:fix
+git add .
+bun lint:check
