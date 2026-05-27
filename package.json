@@ -13,6 +13,7 @@
 		"db:introspect": "drizzle-kit introspect --config=./drizzle/drizzle.config.ts"
 	},
 	"dependencies": {
+		"@hono/zod-openapi": "^1.4.0",
 		"@scalar/hono-api-reference": "^0.10.19",
 		"dotenv": "^17.4.2",
 		"drizzle-orm": "^0.45.2",

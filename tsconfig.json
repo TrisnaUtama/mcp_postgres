@@ -6,13 +6,10 @@
 		"jsxImportSource": "hono/jsx",
 		"baseUrl": "./src",
 		"paths": {
-			"@app": ["index"],
-			"@controllers/*": ["controllers/*"],
-			"@repositories/*": ["repositories/*"],
-			"@services/*": ["services/*"],
-			"@schemas/*": ["schemas/*"],
 			"@settings/*": ["settings/*"],
-			"@db/*": ["db/*"]
+			"@core/*": ["core/*"],
+			"@modules/*": ["modules/*"],
+			"@routes/*": ["routes/*"]
 		}
 	}
 }
