@@ -1,5 +1,28 @@
+# dependencies
 node_modules/
 .node_modules/
 
+# environment variables
 .env
 .env.*
+!.env.example
+
+# build output
+dist/
+build/
+
+# logs
+*.log
+
+# cache
+.cache/
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Bun
+bun.lockb
